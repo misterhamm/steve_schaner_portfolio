@@ -1,0 +1,109 @@
+/**********************************
+BODY
+***********************************/
+
+
+/**********************************
+NAVBAR
+***********************************/
+
+.navbar-brand {
+  font-size: .9em;
+}
+
+/**********************************
+SLIDESHOW
+***********************************/
+
+.carousel-item img {
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+.carousel-indicators li {
+  background-color: #5cb85c;
+}
+
+.carousel-indicators .active {
+  background-color: #428bca;
+}
+
+.carousel {
+  margin-top: 56px;
+}
+
+
+
+/**********************************
+ABOUT
+***********************************/
+
+.profile-picture {
+  border-radius: 50%;
+  width: 50%;
+}
+
+#about {
+  margin-top: 20px;
+}
+
+#about p {
+  text-align: left;
+}
+
+
+
+/**********************************
+SKILLS
+***********************************/
+
+.skills div p {
+  margin-top: 10px;
+}
+
+.progress-bar {
+  transition-duration: 2s;
+}
+
+/**********************************
+FOOTER
+***********************************/
+
+footer {
+  margin: 30px auto;
+  padding: 0 5%;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+.social a {
+  color: gray;
+}
+
+#social-facebook:hover {
+  color: #3b5998;
+}
+
+#social-twitter:hover {
+  color: #00aced;
+}
+
+#social-linkedin:hover {
+  color: #0077b5;
+}
+
+#social-treehouse:hover {
+  color: #5fcf80;
+}
+
+
+@media screen and (min-width: 576px) {
+
+  #about-header {
+    margin-top: 75px;
+  }
+
+}

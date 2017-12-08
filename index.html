@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Steve Schaner | Front End Web Developer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="descript" content="Building fully responsive web sites for your business">
+    <meta name="keywords" content="web development, steve schaner, html, css, javascript">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- My custom CSS -->
+    <link rel="stylesheet" href="css/portfolioCustom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary text-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-1" href="#">Steve Schaner | Web Developer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">About</a>
+            <a class="nav-item nav-link" href="#work">Work</a>
+            <a class="nav-item nav-link" href="#skills">Skills</a>
+          </div>
+        </div>
+      </div>
+    </nav> <!-- /navbar -->
+
+        <!-- Slideshow  -->
+        <div id="jumbotronCarousel" class="carousel slide d-sm-none" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#jumbotronCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#jumbotronCarousel" data-slide-to="1"></li>
+            <li data-target="#jumbotronCarousel" data-slide-to="2"></li>
+            <li data-target="#jumbotronCarousel" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img/slideshow/web-developer.jpeg" alt="Picture of a computer and html/css book">
+              <div class="carousel-caption d-md-block text-primary">
+                <h1>Steve Schaner</h1>
+                <h4>Web Developer</h4>
+                <button class="btn btn-primary mt-4" type="button" data-toggle="modal" data-target="#contact">Contact Me</button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slideshow/problem-solver.jpeg" alt="Man working at a desk">
+              <div class="carousel-caption d-md-block text-primary">
+                <h1>Steve Schaner</h1>
+                <h4>Problem Solver</h4>
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contact">Contact Me</button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slideshow/collaborator.jpg" alt="People working together at a table">
+              <div class="carousel-caption d-md-block text-primary">
+                <h1>Steve Schaner</h1>
+                <h4>Collaborator</h4>
+                <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#contact">Contact Me</button>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img/slideshow/communicator.jpeg" alt="A man shaking hands with someone over a table">
+              <div class="carousel-caption d-md-block text-primary">
+                <h1>Steve Schaner</h1>
+                <h4>Communicator</h4>
+                <button class="btn btn-primary " type="button" data-toggle="modal" data-target="#contact">Contact Me</button>
+
+              </div>
+            </div>
+
+          </div>
+          <a class="carousel-control-prev" href="#jumbotronCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#jumbotronCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div> <!-- /slideshow -->
+
+    <div class="container">
+      <!-- about (1st row) -->
+      <h1 id="about-header" class="d-none d-sm-block text-center">Steve Schaner</h1>
+      <div id="about" class="row">
+        <div class="col-sm-6 text-center">
+          <h3 class="text-center">Hi there!</h3>
+          <img class="profile-picture mb-4" src="img/profile-picture-square.jpg" alt="Profile picture of Steve Schaner">
+          <p>My name is Steve Steve Schaner and I have taught middle and high school math since 2008. I enjoy helping others improve their lives. I also enjoy learning as much as I can to improve myself. I have always enjoyed anything to do with technology but didn't want to leave my students. My principal asked me to learn programming to teach it and I jumped on the opportunity. I learned as much as I could but the programming course dream didn't turn into a reality because of funding issues. It was too late. I was hooked. I've been learning web development ever since starting it in May 2017 and loving any chance I have to learn web development.</p>
+          <button class="btn btn-primary " type="button" data-toggle="modal" data-target="#contact">Contact Me</button>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <h3 class="text-center">What Do I Provide?</h3>
+          <p>I can provide you with a clean, responsive, and functional website. Whether your project is a simple one page site like this one or a larger project with many pages and functionality, I can help you market your business. Every project brings new and fun challenges to help your business grow and to help myself grow as a developer. Let's grow together.</p>
+        </div>
+
+      </div> <!-- /about -->
+
+      <!-- work (2nd row) -->
+      <h1 id="work" class="display-4 text-center my-5 text-muted">Work</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="img/apexThumbnail.jpg" alt="Apex Outdoor Services Website Screenshot">
+            <div class="card-body">
+              <h4 class="card-title">Apex Outdoor Services</h4>
+              <p class="card-text">I created a landscaping services website with the focus of being a simple and local website. I showcased their work with a carousel slideshow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="img/truthOrDareThumbnail.jpg" alt="Truth or Dare Website Screenshot">
+            <div class="card-body">
+              <h4 class="card-title">Truth or Dare?</h4>
+              <p class="card-text">I created a website for a client who needed a beautiful website that shares inspirational stories to people all over the world.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card mb-3">
+            <img class="card-img-top" src="img/website-here.jpeg" alt="Your website here">
+            <div class="card-body">
+              <h4 class="card-title">Your Website Here!</h4>
+              <p class="card-text">Imagine your website here so many people can be attracted to your wonderful business.</p>            </div>
+          </div>
+        </div>
+
+        </div> <!-- /work -->
+
+      <!-- callout button for contact form-->
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#contact">Don't Miss Out, Contact Me Today!</button>
+
+      <!-- skills (3rd row) -->
+      <h1 class="display-4 text-center text-muted">Skills</h1>
+      <p id="skills-subtitle" class="text-center text-muted">Hover over the skills to see how much I know.</p>
+      <div id="skills" class="row skills">
+        <div class="col-md-6 skills-1">
+          <h3 class="text-center mt-4">Front End</h3>
+          <p>HTML5</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>CSS3</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>JavaScript</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ">
+          <h3 class="text-center mt-4">Back End</h3>
+          <p>ASP.NET</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>C#</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <p>PHP</p>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div> <!-- /skills -->
+
+      <!-- <h5>Check it out, an embedded video</h5>
+      <iframe src="https://www.nbcnews.com/widget/video-embed/1105473091842" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
+
+      <!-- footer -->
+      <footer class="footer">
+      <div class="fa-stack fa-lg social">
+        <a href="#" target="_blank" id="social-facebook">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+
+      <div class="fa-stack fa-lg social">
+        <a href="https://twitter.com/steveSchaner" target="_blank" id="social-twitter">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+
+      <div class="fa-stack fa-lg social">
+        <a href="https://www.linkedin.com/in/stevenschaner/" target="_blank" id="social-linkedin">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+
+      <div class="fa-stack fa-lg social">
+        <a href="https://teamtreehouse.com/stevenschaner" target="_blank" id="social-treehouse">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fi-social-treehouse fa-stack-1x fa-inverse"></i>
+        </a>
+      </div>
+
+      <p class="copyright">&copy; 2017 Steve Schaner</p>
+    </footer> <!-- End footer -->
+
+  </div> <!-- /container -->
+
+  <!--=====================================
+     FORM MODAL
+    =====================================-->
+
+    <div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Form</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- contact form -->
+            <form>
+              <h5 class="mb-4">Contact Me</h5>
+              <div class="form-group">
+                <label class="col-form-label sr-only" for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label class="col-form-label sr-only" for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="name-title">Title:</label>
+                <select class="form-control" id="name-title">
+                  <option value="mr">Mr.</option>
+                  <option value="mrs">Mrs.</option>
+                  <option value="miss">Miss.</option>
+                  <option value="ms">Ms.</option>
+                </select>
+              </div>
+            </form> <!-- /contact form -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/portfolioJavaScript.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -72,6 +72,7 @@ FOOTER
 footer {
   margin: 30px auto;
   padding: 0 5%;
+ /* Why the 5% left/right padding? */
   text-align: center;
 }
 
@@ -81,6 +82,7 @@ footer p {
 
 .social a {
   color: gray;
+    /* Not a hard and fast rule but try to avoid color names and stick to hex codes.  Keeps it consistent. */
 }
 
 #social-facebook:hover {

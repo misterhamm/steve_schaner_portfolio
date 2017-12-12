@@ -6,21 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="descript" content="Building fully responsive web sites for your business">
     <meta name="keywords" content="web development, steve schaner, html, css, javascript">
+    <!-- Good start with meta tags. "Descript" should be "description".  If you'd like to take full advantage of SEO and Social Network sharing you'll need a bunch more.  Essentially there are two systems you need to consider.  Twitter and Open Graph (Facebook).  I've listed the tags I use on my site below which I stole from the BizStream.com site :) There are some optimization rules for images based on how Twitter/Facebook like to display them but if you get all these in you're in really good shape.
+    
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="Website" />
+    <meta property="og:url" content="http://www.misterhamm.com/" />
+    <meta property="og:site_name" content="Misterhamm Web Development">
+    <meta property="og:title" content="Misterhamm - Web Development" />
+    <meta property="og:description" content="Building fully responsive web sites using the Kentico CMS." />
+    <meta property="og:image" content="http://www.misterhamm.com/MRHAMM/media/Images/Meta/og-image.png" />
+
+    <meta name="twitter:image" content="http://www.misterhamm.com/MRHAMM/media/Images/Meta/twitter-image.png" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@misterhamm">
+    <meta name="twitter:creator" content="@misterhamm">
+    <meta name="twitter:title" content="Misterhamm - Web Development" />
+    <meta name="twitter:description" content="Building fully responsive web sites using the Kentico CMS." />
+
+    <meta name="description" content="Building fully responsive web sites using the Kentico CMS." /> 
+    <meta name="keywords" content="BizStream, Kentico CMS, web and software design and development, Chris Hamm, Content Management System, ASP.Net, Kentico EMS" /> 
+
+      -->
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- My custom CSS -->
     <link rel="stylesheet" href="css/portfolioCustom.css">
+    <!-- I think you were working on scss?  I didn't see any sass files in the repo -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.min.css"> 
+    <!-- Always make your custom css the last style file called.  This way you can take advantage of specificity and override 3rd party styles as needed without jumping through a bunch of hoops -->
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-primary text-white fixed-top">
+     <!-- Be careful with style-specific classes like 'text-white'.  If you ever need to make a change using classes like this will force you to either edit HTML to change a style or change the .text-white class to something like blue (which would be especially bad) :) -->
       <div class="container">
         <a class="navbar-brand order-1" href="#">Steve Schaner | Web Developer</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <!-- I like the mobile menu - nice --> 
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -79,6 +104,8 @@
 
               </div>
             </div>
+            
+            <!-- I've been thinking about this section.  It's totally up to you but I've never seen a site with a carousel that only appears on mobile.  If anything we often kill carousels on mobile and display it on desktop.  They are much easier to navigate on desktop and you don't have to worry about data usage and connection speed which, admittedly, is less of an issue than it used to be. -->
 
           </div>
           <a class="carousel-control-prev" href="#jumbotronCarousel" role="button" data-slide="prev">
@@ -106,7 +133,7 @@
           <h3 class="text-center">What Do I Provide?</h3>
           <p>I can provide you with a clean, responsive, and functional website. Whether your project is a simple one page site like this one or a larger project with many pages and functionality, I can help you market your business. Every project brings new and fun challenges to help your business grow and to help myself grow as a developer. Let's grow together.</p>
         </div>
-
+<!-- This section looks good on mobile.  I'm not as sold on the desktop layout.  It feels like the "What Do I Provide" section is kind of hanging out there on it's own.  Personally I would either stack that section below your bio and full-width/center your picture and your bio OR move you bio to where the "What Do I Provide" section is on desktop and put WDIP below both the picture and bio  -->
       </div> <!-- /about -->
 
       <!-- work (2nd row) -->
@@ -140,11 +167,12 @@
               <p class="card-text">Imagine your website here so many people can be attracted to your wonderful business.</p>            </div>
           </div>
         </div>
-
+<!-- I like the tiles here for your work items. Why no links?  I want to see the sites you put together! Also, on wider breakpoints, these three should be the same height.  It looks like the outer most containers already are because they are display:flex but the border is set on an inner container.  Images you'll need to hardcode a height for -->
         </div> <!-- /work -->
 
       <!-- callout button for contact form-->
       <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#contact">Don't Miss Out, Contact Me Today!</button>
+      <!-- Nice contact form modal.  Looks like this is still in progress so I won't comment on the actual fields.  I would make sure that you add 'cursor:pointer' on hover of the button starting at your desktop width.  If the cursor stays on the arrow it doesn't feel "clickable" --> 
 
       <!-- skills (3rd row) -->
       <h1 class="display-4 text-center text-muted">Skills</h1>
@@ -182,6 +210,8 @@
           </div>
         </div>
       </div> <!-- /skills -->
+      
+      <!-- Excellent theft! :) Couple of thoughts.  Purely from a marketing perspective I wouldn't list skills that are at the 10% level.  Just feels like they are filling space rather than marketing yourself. But that's personal opinion -->
 
       <!-- <h5>Check it out, an embedded video</h5>
       <iframe src="https://www.nbcnews.com/widget/video-embed/1105473091842" width="560" height="315" frameborder="0" allowfullscreen></iframe> -->
@@ -217,6 +247,8 @@
       </div>
 
       <p class="copyright">&copy; 2017 Steve Schaner</p>
+      <!-- These look good.  I would push them down away from your skill bars to create a clear footer. Personally I like to add subtle transitions to buttons like this so the color doesn't just pop on and off BUT, that's a personal preference.  We have plenty of multi-million dollar clients who say no transitions.  Facebook icon doesn't link anywhere. -->
+      
     </footer> <!-- End footer -->
 
   </div> <!-- /container -->
@@ -262,7 +294,8 @@
     </div>
 
     <script type="text/javascript" src="js/portfolioJavaScript.js"></script>
-
+<!-- Same as CSS - custom scripts should always come last.  If you ever wanted to use jquery in your custom code or call a 3rd party plugin you would HAVE to put it below the other files. -->
+   
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -270,3 +303,13 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
+
+
+<!-- Next Steps to consider
+- You have a pretty simple layout.  Not to say that is bad.  I like clean and straightforward designs.  Shit gets way too busy on some sites. With that in mind, however, consider tackling a section at a time and reducing your reliance on 3rd party classes.  Looks like you're using a ton of Bootstrap classes.  Nothing wrong with that per say but you do hit a point of diminishing returns when you're doing most of your "styling" via HTML.  It's good practice too.
+- Finish contact form
+ -- check out http://fireform.org/ for an easy contact form solution.  I'm sure there are others (probably even easier/better ones) but this is the one I'm familiary with :)
+- If you're really looking to market yourself there are a bazillion things you can do.  A simple one is a custom logo.  I've used fiverr.com before for stuff like that.  I didn't end up using the logo they sent but it was cheap and got me started on some ideas I was able to put together myself.
+- Without seeing your other projects I'm not really sure what else you've done but it's good to show some range even if it's just a small personal project.  Put together a little app in Angular or mess around with some API calls.  You'll get some good learning out of it and you'll show that you're interested in expanding your skills.
+ 
+   -->
